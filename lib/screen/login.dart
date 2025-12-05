@@ -69,12 +69,52 @@ return Scaffold(
                         ),
             ),
           ),
-          
-                ],
+
+             SizedBox(height: 10), 
+
+          TextField(
+            obscureText: true,
+            decoration: InputDecoration(
+            labelText: 'Password',
+            hintText : 'Masukkan Password Anda',
+
+            //garis kolom
+
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12.0),
+            ),
+
+            //line abu-abu
+
+           enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12),
+              borderSide: BorderSide(color: Colors.grey[300]!)
+            ),
+
+            //line biru
+
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12),
+              borderSide: BorderSide(
+              color: Colors.blue[700]!,
+              width: 2
               ),
+            ),
+
+            //icon 
+            prefixIcon: const Icon(
+                        Icons.lock_outline),
+            suffixIcon: const Icon(
+                          Icons.visibility_outlined),
+                        ),
+                        ),
+
+                SizedBox(height: 20),           
+              ],
             ),
           ),
         ),
-      );  
-    }
+      ),
+    );  
+  }
 }

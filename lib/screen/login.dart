@@ -109,7 +109,21 @@ return Scaffold(
                         ),
                         ),
 
-                SizedBox(height: 20),           
+                SizedBox(height: 20),   
+
+          //lupa password
+
+              Align(
+                  alignment: Alignment.centerRight,
+                  child: TextButton(onPressed: (){},
+                  child: Text('Lupa Password?',
+                  style: TextStyle(color: Colors.blue[700],fontSize: 14),
+                  ),
+                  ),
+                  ),
+
+                SizedBox(height: 20), 
+
               ],
             ),
           ),

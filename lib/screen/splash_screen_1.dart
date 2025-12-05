@@ -35,6 +35,18 @@ class SplashScreen1 extends StatelessWidget {
 
             SizedBox(height: 20), //jarak 20 antara lingkaran dan teks
 
+            Text(
+              "Forgot to bring your wallet \n when you are shopping?",
+              style: TextStyle(
+                fontSize: 15.0,
+                color: Colors.amber,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+
+            SizedBox(height: 30),
+
+
             ],
           ),
       ),

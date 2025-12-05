@@ -20,7 +20,7 @@ class SplashScreen2 extends StatelessWidget {
                   shape: BoxShape.circle,
                   color: Colors.amber,
                   image: DecorationImage(
-                  image: AssetImage("assets/images/owl.png"),
+                  image: AssetImage("assets/images/pinguin.png"),
                   fit: BoxFit.cover,
                 ),
                 ),
@@ -39,6 +39,7 @@ class SplashScreen2 extends StatelessWidget {
 
             Text(
               "Forgot to bring your wallet \n when you are shopping?",
+              //"Masih zaman bawa dompet? \n kan ada Dana!",
               style: TextStyle(
                 fontSize: 15.0,
                 color: Colors.amber,
@@ -56,7 +57,7 @@ class SplashScreen2 extends StatelessWidget {
                   height: 10,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color.fromARGB(255, 242, 152, 8),
+                    color: Color.fromARGB(255, 117, 98, 57),
                   ),
                 ),
 
@@ -67,7 +68,7 @@ class SplashScreen2 extends StatelessWidget {
                   height: 10,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color.fromARGB(255, 117, 98, 57),
+                    color: Color.fromARGB(255, 242, 152, 8),
                   ),
                 ),
 

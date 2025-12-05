@@ -23,6 +23,18 @@ class SplashScreen1 extends StatelessWidget {
                 ),
                 ),
               ),
+
+            SizedBox(height: 20), //jarak 20 antara lingkaran dan teks
+
+            Text(
+              "Welcome",
+              style: TextStyle(fontSize: 30.0, 
+              fontWeight: FontWeight.normal
+              ),
+            ),
+
+            SizedBox(height: 20), //jarak 20 antara lingkaran dan teks
+
             ],
           ),
       ),

@@ -86,7 +86,11 @@ class SplashScreen1 extends StatelessWidget {
             SizedBox(height: 30),
 
             Container(
-              child: ElevatedButton(
+            margin: EdgeInsets.only(left: 40, right: 40),
+              child: SizedBox(
+                height: 40,
+                width: double.infinity,
+                child: ElevatedButton(
                 onPressed: (){
                   //memanggil pages selanjutnya
                 },
@@ -96,8 +100,9 @@ class SplashScreen1 extends StatelessWidget {
                     child: Text("Continue", style: TextStyle(fontSize: 14)),
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
+        ),
       ),
     );
   }

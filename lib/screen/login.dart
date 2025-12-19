@@ -1,46 +1,46 @@
 import 'package:flutter/material.dart';
 
-class SignInPage extends StatelessWidget {
-  const SignInPage({super.key});
+class Login extends StatelessWidget {
+  const Login({super.key});
 
   @override
   Widget build(BuildContext context) {
-return Scaffold(
-        body: Center(
-          child: SingleChildScrollView(
-            child: Container(
-              padding: const EdgeInsets.all(20.0),
-              child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  SizedBox(height: 10),
-                  Icon(
-                    Icons.lock_outline,
-                    size: 80,
-                    color: Colors.amber,
-                  ),
-          
-                  SizedBox(height: 10),
-          
-              Text(
-                "Selamat Datang",
-                style: TextStyle(fontSize: 30.0, 
-                fontWeight: FontWeight.normal
-                ),
+    return Scaffold(
+      body: Center(
+        child: Column(
+         // mainAxisAlignment: MainAxisAlignment.center, // vertikal tengah
+          //crossAxisAlignment: CrossAxisAlignment.center, // horizontal tengah
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Container(
+          padding:  EdgeInsets.all(20.0),
+          child: Column(
+            children: [
+              SizedBox(height: 10),
+              Icon(
+                Icons.lock_outline,
+                size: 80,
+                color: Colors.amber,
               ),
-          
-              SizedBox(height: 5), //jarak 20 antara lingkaran dan teks
-          
-              Text(
-                "Silahkan login untuk melanjutkan",
-                style: TextStyle(
-                  fontSize: 15.0,
-                  color: Colors.amber,
-                  fontWeight: FontWeight.bold,
-                ),
+              SizedBox(height: 10),
+            Text(
+              "Selamat Datang",
+              style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.normal),
+            ),
+
+            SizedBox(height: 20), //jarak 20 antara lingkaran dan teks
+
+            Text(
+              "Silahkan Login Untuk Melanjutkan",
+              style: TextStyle(
+                fontSize: 15.0,
+                color: Colors.amber,
+                fontWeight: FontWeight.bold,
               ),
-          
-              SizedBox(height: 30),
+              textAlign: TextAlign.center,
+            ),
+
+            SizedBox(height: 20), //jarak 20 antara icon dan teks
 
           TextField(
             keyboardType: TextInputType.emailAddress,
@@ -109,21 +109,24 @@ return Scaffold(
                           Icons.visibility_outlined),
                         ),
                         ),
+            ],
+            ),
+          ),
 
-                SizedBox(height: 20),   
+             SizedBox(height: 20), 
 
           //lupa password
 
-              Align(
-                  alignment: Alignment.centerRight,
-                  child: TextButton(onPressed: (){},
-                  child: Text('Lupa Password?',
-                  style: TextStyle(color: Colors.blue[700],fontSize: 14),
-                  ),
-                  ),
-                  ),
+          Align(
+              alignment: Alignment.centerRight,
+              child: TextButton(onPressed: (){},
+               child: Text('Lupa Password?',
+               style: TextStyle(color: Colors.blue[700],fontSize: 14),
+               ),
+               ),
+              ),
 
-                SizedBox(height: 20), 
+             SizedBox(height: 20), 
 
           // button login
 
@@ -178,11 +181,10 @@ return Scaffold(
 
              SizedBox(height: 20), 
 
-              ],
-            ),
-          ),
+
+          ],
         ),
-      ),
-    );  
+    ),
+    );
   }
 }

@@ -97,7 +97,7 @@ class SplashScreen3 extends StatelessWidget {
                     //route : material page route
                     Navigator.pushAndRemoveUntil(
                       context,
-                      MaterialPageRoute(builder: (context) => SignInPage()),
+                      MaterialPageRoute(builder: (context) => Login()),
                       (Route<dynamic> route) => false,
                     );
                     // panggil slide selanjutnya
